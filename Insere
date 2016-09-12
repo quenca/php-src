@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Mercadorias</title>
+    </head>
+    <body>
+        <form action="Inserir.php" method="POST">
+            <div id="menu">
+                <li><a href="#"></a>Home</li>
+                <li><a href="#"></a>Sobre</li>
+                <li><a href="#"></a>Mercadorias</li>
+            </div>
+            
+            <pre>
+                <label>Tipo da Mercadoria: </label>
+                <input type="text" name="tipoMercadoria" value=<? echo $tipoMercadoria ?>><br>
+                
+                <label>Nome: </label>
+                <input type="text" name="tipoMercadoria" value=<? echo $nomeMercadoria ?>><br>
+                
+                <label> Quantidade: </label>
+                <input type="text" name="quantidade" value=<? echo $quantidade ?>><br>
+
+                <label> Preço: </label>
+                <input type="text" name="preco" value=<? echo $preco ?>><br>
+
+                <label> Tipo do Negocio: </label>
+                <select name="Negocio[]">
+                <option name="Compra">Compra</option>
+                <option name="Venda">Venda</option>
+                
+                <input type="submit" name="botao" value="Enviar" />
+            </pre>
+        </form>
+        <?php
+        // put your code here
+        ?>
+    </body>
+</html>
